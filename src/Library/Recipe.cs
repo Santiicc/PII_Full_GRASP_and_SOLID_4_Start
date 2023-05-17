@@ -15,7 +15,8 @@ namespace Full_GRASP_And_SOLID
 
         public Product FinalProduct { get; set; }
 
-        // aplicando Creator 
+        // aplicando Creator
+        // crea instancia de step en addstep
         public void AddStep(Product input, double quantity, Equipment equipment, int time)
         {
             this.steps.Add(new Step(input, quantity, equipment, time));
